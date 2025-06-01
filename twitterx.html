@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for responsiveness and character encoding -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Tweet Demo</title>
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter-pip.3.ico">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/tweets.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/rightside.css">
+    <link rel="stylesheet" href="styles/middle.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/post.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header"> 
+        <div class="h">
+            <button class="h1">For you</button>
+            <button class="h2">Following</button>
+            <div class="header-settings-icon">
+                <img class="header-settings-icons" src="icons/settings.svg">
+                <div class="tooltip">Search</div>
+            </div>          
+        </div>
+        <input class="search-bar" type="text" placeholder="Search">
+    </div>  
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <!-- Sidebar links with tooltips -->
+        <div class="sidebar-link">
+            <div class="sidebar1">
+                <img src="icons/twitter-icon.png">
+                <div class="tooltip">Twitter</div>
+            </div>
+        </div>
+        <div class="sidebar-link">
+            <div class="sidebar2">
+                <img src="icons/sidebar-home.svg">
+                <div class="tooltip">Home</div>
+            </div>
+        </div>
+        <div class="sidebar-link">
+            <div class="sidebar3">
+                <img src="icons/sidebar-explore.svg">
+                <div class="tooltip">Explore</div>
+            </div>
+        </div>
+        <div class="sidebar-link">
+            <div class="sidebar4">
+                <img src="icons/sidebar-notifications.svg">
+                <div class="tooltip">Notifications</div>
+            </div>
+        </div>
+        <div class="sidebar-link">
+            <div class="sidebar5">
+                <img src="icons/sidebar-messages.svg">
+                <div class="tooltip">Messages</div>
+            </div>
+        </div>
+        <div class="sidebar-link">
+            <div class="sidebar6">
+                <img src="icons/sidebar-more.svg">
+                <div class="tooltip">More</div>
+            </div>
+        </div>
+        <div class="sidebar-link">
+            <div class="sidebar7">
+                <img src="icons/sidebar-profile.svg">
+                <div class="tooltip">Profile</div>
+            </div>
+        </div>
+        <div class="sidebar-link">
+            <div class="sidebar8">
+                <img  class="tweet-img" src="icons/sidebar-tweet.png">
+                <div class="tooltip">post</div>
+            </div>
+        </div>
+        <div class="sidebar-link">
+            <div class="sidebar9">
+                <img class="user-img" src="channels/user-profile.jpg">
+                <div class="tooltip">accounts</div>
+            </div>
+        </div>
+    </div>   
+
+    <!-- Main Content Section -->
+    <div class="main-middle-section">
+        <div class="tweet-container">
+            <!-- Post Tweet Box -->
+            <div class="post-container">
+                <img class="post-avatar" height="40" src="channels/user-profile.jpg" width="40" />
+                <div class="flex-1">
+                    <select id="visibility" name="visibility" class="post-button">
+                    <option value="everyone">Everyone</option>
+                    <option value="friends">Friends</option>
+                    <option value="only-me">Only Me</option>
+                    <i class="fas fa-chevron-down text-blue-500 text-xs"></i>
+                    </select>
+                    <textarea class="post-label" id="post-textarea" placeholder="What’s happening?" rows="1"></textarea>
+                  <div class="post-reply">
+                    <i class="fas fa-globe-americas text-base"></i>
+                    <span>Everyone can reply</span>
+                  </div>
+                  <hr class="post-divider" />
+                  <div class="flex items-center justify-between">
+                    <div class="post-icons">
+                      <button aria-label="Add image" class="post-icon-button" type="button">
+                        <i class="far fa-image"></i>
+                      </button>
+                      <button aria-label="Add GIF" class="post-icon-button" type="button">
+                        <i class="far fa-file-video"></i>
+                      </button>
+                      <button aria-label="Add poll" class="post-icon-button" type="button">
+                        <i class="fas fa-poll"></i>
+                      </button>
+                      <button aria-label="Add emoji" class="post-icon-button" type="button">
+                        <i class="far fa-smile"></i>
+                      </button>
+                      <button aria-label="Add schedule" class="post-icon-button" type="button">
+                        <i class="far fa-calendar-alt"></i>
+                      </button>
+                      <button aria-label="Add location" class="post-icon-button" type="button">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </button>
+                    </div>
+                    <button class="post-submit" type="button">Post</button>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Tweets Feed -->
+            <!-- Each .tweet block represents a tweet -->
+           <div class="tweets-feed-container">
+                
+            </div> 
+                   
+        </div>
+
+        <!-- Right Side Block: Subscribe, Who to follow, Footer -->
+          <div class="right-block">
+            <div class="subscribe-block">
+                <div class="subscribe-head">Subscribe to premium</div>
+                <div class="subscribe-matter"><p>Subscibe to unlock new features and if <br>
+                eligible, receive a share of ads revenue.</p></div>
+                <div><button class="subscribe-button">Subscribe</button></div>
+            </div>
+            <div class="followers-block">
+                <div class="followers-head">Who to follow</div>
+                <div class="follow-block">
+                    <div>
+                        <div class="profile-pic">
+                            <img class="profile-pic1" src="channels/channel3.jpg">
+                        </div>
+                    </div>
+                    <div class="new-followers">
+                        <div class="followers-name">Prem Ranjith</div>
+                        <div class="followers-id">@PremRamjithAni6</div>
+                    </div>
+                    <div>
+                        <button class="follow-button">Follow</button></div>
+                    </div>
+                <div class="follow-block">
+                        <div>
+                            <div class="profile-pic">
+                                <img class="profile-pic1" src="channels/channel2.jpg">
+                            </div>
+                        </div>
+                        <div class="new-followers">
+                            <div class="followers-name">Abinav
+                                reddy 
+                            </div>
+                            <div class="followers-id">@abhi6aaaaaareddy
+
+                            </div>
+                        </div>
+                        <div>
+                            <button class="follow-button">Follow</button></div>
+                    </div>
+                <div class="follow-block">
+                        <div>
+                            <div class="profile-pic">
+                                <img class="profile-pic1" src="channels/channel8.jpg">
+                            </div>
+                        </div>
+                        <div class="new-followers">
+                            <div class="followers-name">Prem Ranjith</div>
+                            <div class="followers-id">@PremRamjithAni6</div>
+                        </div>
+                        <div>
+                            <button class="follow-button">Follow</button></div>
+                    </div>
+            <div class="follow-end">Show more</div>
+            </div>
+            <div class="right-footer">
+                <div class="right-footer-links">
+                  <a href="https://twitter.com/tos" target="_blank">Terms of Service</a> |
+                  <a href="https://twitter.com/privacy" target="_blank">Privacy Policy</a> |
+                  <a href="https://help.twitter.com/en/rules-and-policies/twitter-cookies" target="_blank">Cookie Policy</a>
+                </div>
+                <div class="right-footer-links">
+                  <a href="https://help.twitter.com/en/accessibility" target="_blank">Accessibility</a> |
+                  <a href="https://business.twitter.com/en/advertising.html" target="_blank">Ads info</a> |
+                  <a href="https://help.twitter.com/en/using-twitter/twitter-supported-browsers" target="_blank">More ···</a>
+                  © 2025 X Corp.
+                </div>
+              </div>            
+        </div>
+        
+
+   </div>
+   <script src="tweets.js"></script>
+<script>
+function renderTweets() {
+  const container = document.querySelector('.tweets-feed-container');
+  container.innerHTML = '';
+  tweets.forEach(tweet => {
+    container.innerHTML += `
+      <div class="tweet">
+        <div class="profile-container">
+          <div class="profile-pic">
+            <img class="profile-pic1" src="${tweet.profilePic}" alt="Profile picture of ${tweet.authorName}">
+          </div>
+        </div>
+        <div class="tweet-content">
+          <div class="top">
+            <div class="tweet-author-info">
+              <div class="tweet-author-name">${tweet.authorName}</div>
+              <div class="tweet-author-username">${tweet.authorUsername}</div>
+              <div>&#x2022;</div>
+              <div class="tweet-upload-time">${tweet.uploadTime}</div>
+            </div>
+            <div class="settings-icon">
+              <img class="settings-icons" src="icons/more.svg" alt="More options">
+            </div>
+          </div>
+          <div class="tweet-matter">
+            <p class="tweet-text">${tweet.text}</p>
+          </div>
+          <div class="tweet-icons">
+            <div class="tweet-icon1">
+              <img class="comment" src="icons/comment.svg" alt="Comment">
+              <div class="comment-count">${tweet.commentCount}</div>
+            </div>
+            <div class="tweet-icon2">
+              <img class="repost" src="icons/repost.svg" alt="Repost">
+              <div class="repost-count">${tweet.repostCount}</div>
+            </div>
+            <div class="tweet-icon3">
+              <img class="likes" src="icons/likes.svg" alt="Like">
+              <div class="likes-count">${tweet.likesCount}</div>
+            </div>
+            <div class="tweet-icon4">
+              <img class="views" src="icons/views.svg" alt="Views">
+              <div class="views-count">${tweet.viewsCount}</div>
+            </div>
+            <div class="tweet-icon5">
+              <img class="saved" src="icons/saved.svg" alt="Save">
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+}
+document.addEventListener('DOMContentLoaded', renderTweets);
+</script>
+</body>
+</html>

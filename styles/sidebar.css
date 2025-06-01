@@ -1,0 +1,97 @@
+.sidebar{
+    position: fixed;
+    left:0;
+    top:0;
+    background-color: white;
+    width:77px;   
+    z-index:200;
+    padding-top: 5px;
+    padding-left: 44.5px;
+    margin-right: 20px;
+}
+
+.sidebar-link{
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+}
+
+.sidebar-link img:hover {
+    /* Add hover styles here */
+    background-color: rgb(222, 220, 220);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.sidebar-link img{ 
+    width: 35px;
+}
+
+.sidebar-link .tweet-img{
+    width:55px;
+    border-radius: 50%;
+}
+.sidebar-link .user-img{
+    width:40px;
+    border-radius: 50%;
+}
+
+.sidebar-link .tweet-img:hover,
+.sidebar-link .user-img:hover{
+    background-color:white;
+
+}
+.sidebar {
+    overflow-y: auto; /* Enable vertical scrollbar */
+    overflow-x:hidden ;
+    max-height: 100%; /* Limit the height of the sidebar */
+}
+
+.sidebar::-webkit-scrollbar-track {
+    height: 30px;
+    background: #f1f1f1; /* Color of the track */
+    scrollbar-color: rgb(185, 202, 211);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the thumb */
+    height: 100px;;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the thumb on hover */
+}
+
+.sidebar::-webkit-scrollbar-thumb:active {
+    background: #333; /* Color of the thumb when active */
+}
+
+.sidebar .tooltip {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 10px;
+    bottom: -15px; 
+    left:-10px;/* Adjust this value as needed */
+    opacity: 0;
+    transition-delay: 0.3s;
+    pointer-events: none;
+    white-space: nowrap;z-index: 100;
+}
+
+.sidebar .sidebar1:hover .tooltip,
+.sidebar .sidebar2:hover .tooltip,
+.sidebar .sidebar3:hover .tooltip,
+.sidebar .sidebar4:hover .tooltip,
+.sidebar .sidebar5:hover .tooltip,
+.sidebar .sidebar6:hover .tooltip,
+.sidebar .sidebar7:hover .tooltip,
+.sidebar .sidebar8:hover .tooltip {
+    opacity: 1;
+}

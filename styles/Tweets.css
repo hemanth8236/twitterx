@@ -1,0 +1,166 @@
+.tweet-container {
+    width:600px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;  
+    
+}
+.tweet,.post{
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: row; 
+    width:594px;
+    padding-top: 5px;
+    padding-left: 5px;
+} 
+.tweet:hover{
+    background-color:rgb(247, 249, 249);
+    cursor: pointer;
+}
+.profile-container {
+    display: flex;
+    align-items: top;
+}
+.profile-pic {   
+    margin-right: 5px;
+    margin-left:15px;
+    margin-top:5px;
+}
+.profile-pic1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;        
+}
+
+
+.top{
+    margin:0;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+}
+
+.tweet-content {
+    flex-grow: 1;
+}
+
+.tweet-author-name {
+    font-weight: bold;
+    color: #333; /* Dark gray color */
+}
+.tweet-author-username {
+    color: #666; /* Light gray color */
+}
+.tweet-author-name:hover,
+.tweet-upload-time:hover{
+    text-decoration: underline;
+    transition: 0.15s;
+    text-decoration-thickness: 1px;
+}
+
+.tweet-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #3a3939; /* Dark gray color */
+    padding-left:8px;
+    padding-top: 3px;
+    word-break: break-word;
+}
+.tweet-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.tweet-icon1,
+.tweet-icon2,
+.tweet-icon3,
+.tweet-icon4,
+.tweet-icon5
+{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.tweet-author-info{
+    display: flex;
+    justify-content:left;
+    padding: 7px;
+}
+
+.tweet-author-info div {
+    margin-right: 6px; /* Add right margin to create space between elements */
+    font-size: 17px; 
+}
+.settings-icons{
+    width:15px;
+    padding:7px;
+    border-radius: 50px;
+    margin-right: 2px;
+}
+.comment,
+.repost,
+.likes,
+.views,
+.saved{
+    width:30px;
+    border-radius: 50px;
+}
+.comment:hover,
+.repost:hover,
+.likes:hover,
+.views:hover,
+.saved:hover{
+    background-color: #eaeaea;
+    transition: 0.15s;
+}
+
+.settings-icons:hover{
+    background-color: #eaeaea;
+}
+
+.comment-count,
+.repost-count,
+.likes-count,
+.views-count
+{
+    margin-left: 3px;
+    font-size: 12px; /* Adjust font size as needed */
+    color: #6f6e6e; /* Set the color of the count */
+    font-weight: 700;
+}
+
+
+.tweet-matter{
+    font-family: Arial;
+}
+
+.tweet-text-container {
+    width: 95%; /* Adjust the width as needed */
+}
+
+.highlight{
+    color: rgb(16, 147, 235);
+}
+
+.post{
+    display: flex;
+    align-items: row;
+}
+
+.user-profile {
+    width: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;        
+
+}
+
+.user-image-container{
+    margin-right: 5px;
+    margin-top:5px;
+}
