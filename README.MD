@@ -29,7 +29,6 @@ twitterx/
 
 1. Open `twitterx.html` in your browser.
 2. Add or edit tweets in `tweets.js`.
-3. Add or edit "Who to follow" in `who-to-follow.js`.
 
 ---
 
